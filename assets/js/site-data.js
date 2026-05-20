@@ -798,7 +798,7 @@ window.SITE_DATA = {
       ]
     }
   ],
-  "Awards and Professional Activities": [
+  "Awards & Professional Activities": [
     {
       "title": "Travel Support",
       "year": "2026",
