@@ -1,6 +1,5 @@
-# Abhisek Niraula CV-Updated Website
+# Abhisek Niraula Website
 
-This version was updated using the uploaded CV and is organized as a multi-page academic website.
 
 ## Pages
 - `index.html` — Home
