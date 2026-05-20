@@ -7,8 +7,8 @@ window.SITE_DATA = {
   "profile": {
     "name": "Abhisek Niraula",
     "title": "PhD Student • Graduate Research Assistant",
+     "lab": "Avian Immunobiology Laboratory",
     "affiliation": "Department of Poultry Science, University of Georgia",
-    "lab": "Avian Immunobiology Laboratory",
     "location": "Athens, Georgia, USA",
     "email": "abhisek.niraula@uga.edu",
     "secondaryEmail": "nabhisek02@gmail.com",
@@ -214,7 +214,7 @@ window.SITE_DATA = {
       "title": "Wildlife parasitology and zoonotic disease awareness",
       "status": "Completed / continuing interest",
       "theme": "Parasitology",
-      "year": "2020–Present",
+      "year": "Sept. 2020– Dec. 2020",
       "image": "assets/project-images/wildlife-parasitology.jpg",
       "imageAlt": "Wildlife parasitology and zoonotic disease project image",
       "summary": "Building on veterinary training and early research on zoonotic disease knowledge and gastrointestinal parasite burden to connect poultry, wildlife, and public health questions.",
@@ -796,7 +796,7 @@ window.SITE_DATA = {
       ]
     }
   ],
-  "honors": [
+  "Awards and Professional Activities": [
     {
       "title": "Travel Support",
       "year": "2026",
