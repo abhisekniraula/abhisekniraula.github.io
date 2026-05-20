@@ -102,7 +102,7 @@ window.SITE_DATA = {
   "experience": [
     {
       "title": "Graduate Research Assistant",
-      "organization": "Avian Immunobiology Lab, University of Georgia",
+      "organization": "Avian Immunobiology Lab, Department of Poultry ScienceUniversity of Georgia",
       "location": "Athens, GA, USA",
       "dates": "Aug. 2022 – Present",
       "summary": "Plans and conducts in vivo and in vitro poultry disease experiments and performs microbiome, molecular, and statistical analyses.",
