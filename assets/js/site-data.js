@@ -82,7 +82,7 @@ window.SITE_DATA = {
       "institution": "University of Georgia",
       "location": "Athens, GA, USA",
       "dates": "Jan. 2025 – Present",
-      "details": "Current doctoral training focused on poultry immunology, gut health, host–pathogen interactions, histomoniasis, organoid models, and microbiome bioinformatics."
+      "details": "Current doctoral training focuses on poultry immunology, gut health, host–pathogen interactions, histomoniasis, organoid models, and microbiome bioinformatics."
     },
     {
       "degree": "MS in Poultry Science (Immunology and Health)",
