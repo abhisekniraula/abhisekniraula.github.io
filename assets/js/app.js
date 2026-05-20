@@ -47,7 +47,24 @@
   function openPresentationModal(index,list){ const p=list[index]; if(!p) return; const content=$('#modal-content'), modal=$('#presentation-modal'); if(!content||!modal) return; content.innerHTML=`${imageFigure(p,'aspect-[16/9]','Add presentation image')}<div class="p-6 sm:p-8"><div class="mb-4 flex flex-wrap gap-2"><span class="badge">${escapeHTML(p.year)}</span><span class="badge">${escapeHTML(p.type)}</span><span class="badge">${escapeHTML(p.status)}</span><span class="badge">${escapeHTML(p.role)}</span></div><h2 id="modal-title" class="font-serif text-2xl font-bold leading-tight sm:text-3xl">${escapeHTML(p.title)}</h2><p class="mt-4 text-sm leading-6 text-muted">${escapeHTML(p.authors||'')}</p><p class="mt-4 text-sm leading-6 text-muted">${escapeHTML(p.abstract||'')}</p><dl class="mt-6 grid gap-4 text-sm sm:grid-cols-3"><div><dt class="font-bold">Event</dt><dd class="mt-1 text-muted">${escapeHTML(p.event)}</dd></div><div><dt class="font-bold">Location</dt><dd class="mt-1 text-muted">${escapeHTML(p.location)}</dd></div><div><dt class="font-bold">Date</dt><dd class="mt-1 text-muted">${escapeHTML(p.date)}</dd></div></dl><div class="mt-6 flex flex-wrap gap-2">${(p.tags||[]).map(makeTag).join('')}</div></div>`; modal.classList.remove('hidden'); modal.classList.add('flex'); document.body.classList.add('modal-open'); $('[data-close-modal]')?.focus(); }
   function closePresentationModal(){ const modal=$('#presentation-modal'); if(!modal) return; modal.classList.add('hidden'); modal.classList.remove('flex'); document.body.classList.remove('modal-open'); }
   function renderCV(){ renderList('#education-list',DATA.education,eduCard); renderList('#experience-list',DATA.experience,experienceCard); renderList('#funding-list',DATA.funding,fundingCard); renderSkills(); renderTags('#affiliations-list',DATA.affiliations); renderList('#mentoring-list',DATA.mentoring,simpleCard); }
-  function eduCard(item){ return `<article class="border-l-2 border-amber-600 pl-4"><div class="text-xs font-bold uppercase tracking-wider text-accent">${escapeHTML(item.dates)}</div><h3 class="mt-1 font-serif text-lg font-bold">${escapeHTML(item.degree)}</h3><p class="mt-1 text-sm text-muted">${escapeHTML(item.institution)} • ${escapeHTML(item.location)}</p><p class="mt-2 text-sm leading-6 text-muted">${escapeHTML(item.details)}</p></article>`; }
+  function eduCard(item){
+  const advisor = item.advisor || item.Advisor || "";
+  const advisorUrl = item.advisorUrl || "";
+
+  const advisorHTML = advisor
+    ? advisorUrl
+      ? `<p class="mt-1 text-sm font-semibold text-muted">Advisor: <a href="${escapeHTML(advisorUrl)}" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">${escapeHTML(advisor)}</a></p>`
+      : `<p class="mt-1 text-sm font-semibold text-muted">Advisor: ${escapeHTML(advisor)}</p>`
+    : "";
+
+  return `<article class="border-l-2 border-amber-600 pl-4">
+    <div class="text-xs font-bold uppercase tracking-wider text-accent">${escapeHTML(item.dates)}</div>
+    <h3 class="mt-1 font-serif text-lg font-bold">${escapeHTML(item.degree)}</h3>
+    <p class="mt-1 text-sm text-muted">${escapeHTML(item.institution)} • ${escapeHTML(item.location)}</p>
+    ${advisorHTML}
+    <p class="mt-2 text-sm leading-6 text-muted">${escapeHTML(item.details)}</p>
+  </article>`;
+}
   function experienceCard(item){ return `<article class="rounded-2xl border border-line p-4"><div class="text-xs font-bold uppercase tracking-wider text-accent">${escapeHTML(item.dates)}</div><h3 class="mt-1 font-serif text-lg font-bold">${escapeHTML(item.title)}</h3><p class="mt-1 text-sm text-muted">${escapeHTML(item.organization)} • ${escapeHTML(item.location)}</p><p class="mt-3 text-sm leading-6 text-muted">${escapeHTML(item.summary)}</p><ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-muted">${(item.bullets||[]).map(b=>`<li>${escapeHTML(b)}</li>`).join('')}</ul></article>`; }
   function fundingCard(item){ return `<article class="rounded-2xl border border-line p-4"><div class="mb-2 flex flex-wrap gap-2"><span class="badge">${escapeHTML(item.years)}</span><span class="badge">${escapeHTML(item.role)}</span></div><h3 class="font-serif text-lg font-bold leading-snug">${escapeHTML(item.title)}</h3><p class="mt-2 text-sm text-muted">${escapeHTML(item.agency)}</p><p class="mt-1 text-xs text-muted">${escapeHTML(item.investigators)}</p><p class="mt-3 text-sm text-muted">${escapeHTML(item.theme)}</p></article>`; }
   function simpleCard(item){ return `<article class="rounded-2xl border border-line p-4"><h3 class="text-sm font-bold">${escapeHTML(item.title)}</h3><p class="mt-2 text-sm leading-6 text-muted">${escapeHTML(item.details)}</p></article>`; }
