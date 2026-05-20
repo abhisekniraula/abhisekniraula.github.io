@@ -7,8 +7,9 @@ window.SITE_DATA = {
   "profile": {
     "name": "Abhisek Niraula",
     "title": "PhD Student • Graduate Research Assistant",
-     "lab": "Avian Immunobiology Laboratory",
+    "lab": "Avian Immunobiology Laboratory",
     "affiliation": "Department of Poultry Science, University of Georgia",
+    "affiliationShort": "University of Georgia",
     "location": "Athens, Georgia, USA",
     "email": "abhisek.niraula@uga.edu",
     "secondaryEmail": "nabhisek02@gmail.com",
@@ -19,6 +20,7 @@ window.SITE_DATA = {
     "heroImageAlt": "Portrait of Abhisek Niraula",
     "cvFile": "assets/cv/Abhisek_Niraula_CV.pdf"
   },
+
   "links": [
     {
       "label": "Google Scholar",
@@ -46,6 +48,7 @@ window.SITE_DATA = {
       "icon": "email"
     }
   ],
+
   "stats": [
     {
       "label": "Published peer-reviewed papers",
@@ -64,6 +67,7 @@ window.SITE_DATA = {
       "value": "16"
     }
   ],
+
   "focusAreas": [
     "Poultry Diseases",
     "Immunology",
@@ -76,13 +80,14 @@ window.SITE_DATA = {
     "Host genetics",
     "Organoid models"
   ],
+
   "education": [
     {
       "degree": "PhD in Poultry Science (Immunology and Health)",
       "institution": "University of Georgia",
       "location": "Athens, GA, USA",
       "dates": "Jan. 2025 – Present",
-      "Advisor": "Dr. Rami A. Dalloul",
+      "advisor": "Dr. Rami A. Dalloul",
       "details": "Current doctoral training focuses on poultry immunology, gut health, host–pathogen interactions, histomoniasis, organoid models, and microbiome bioinformatics."
     },
     {
@@ -90,7 +95,7 @@ window.SITE_DATA = {
       "institution": "University of Georgia",
       "location": "Athens, GA, USA",
       "dates": "Aug. 2022 – Dec. 2024",
-      "Advisor": "Dr. Rami A. Dalloul",
+      "advisor": "Dr. Rami A. Dalloul",
       "details": "Thesis: Differential response of divergent genetic lines of chickens to mixed Eimeria infection."
     },
     {
@@ -98,13 +103,15 @@ window.SITE_DATA = {
       "institution": "Agriculture and Forestry University",
       "location": "Nepal",
       "dates": "Dec. 2014 – Oct. 2020",
+      "advisor": "",
       "details": "Thesis: Knowledge, attitude, and practices (KAP) pertaining to zoonotic diseases among smallholder livestock owners of the Tulsipur region in Nepal."
     }
   ],
+
   "experience": [
     {
       "title": "Graduate Research Assistant",
-      "organization": "Avian Immunobiology Lab, Department of Poultry ScienceUniversity of Georgia",
+      "organization": "Avian Immunobiology Lab, Department of Poultry Science, University of Georgia",
       "location": "Athens, GA, USA",
       "dates": "Aug. 2022 – Present",
       "summary": "Plans and conducts in vivo and in vitro poultry disease experiments and performs microbiome, molecular, and statistical analyses.",
@@ -118,6 +125,7 @@ window.SITE_DATA = {
       ]
     }
   ],
+
   "funding": [
     {
       "title": "Cecal organoids offer a reliable laboratory model to evaluate alternative chemotherapeutic compounds against Histomonas meleagridis",
@@ -136,6 +144,7 @@ window.SITE_DATA = {
       "theme": "Parasitology • Public health"
     }
   ],
+
   "projects": [
     {
       "title": "Cecal organoid model for Histomonas meleagridis research",
@@ -216,7 +225,7 @@ window.SITE_DATA = {
       "title": "Wildlife parasitology and zoonotic disease awareness",
       "status": "Completed / continuing interest",
       "theme": "Parasitology",
-      "year": "Sept. 2020– Dec. 2020",
+      "year": "Sept. 2020 – Dec. 2020",
       "image": "assets/project-images/wildlife-parasitology.jpg",
       "imageAlt": "Wildlife parasitology and zoonotic disease project image",
       "summary": "Building on veterinary training and early research on zoonotic disease knowledge and gastrointestinal parasite burden to connect poultry, wildlife, and public health questions.",
@@ -228,6 +237,7 @@ window.SITE_DATA = {
       ]
     }
   ],
+
   "publications": {
     "published": [
       {
@@ -383,6 +393,7 @@ window.SITE_DATA = {
         ]
       }
     ],
+
     "submitted": [
       {
         "title": "Sources, transmission, and control of Salmonella in vertically integrated broiler chicken production",
@@ -402,6 +413,7 @@ window.SITE_DATA = {
         ]
       }
     ],
+
     "inPreparation": [
       {
         "title": "Histomoniasis in poultry: Transmission biology, experimental models, and alternative strategies for prevention and control",
@@ -453,6 +465,7 @@ window.SITE_DATA = {
       }
     ]
   },
+
   "presentations": [
     {
       "title": "Cecal microbiome profiles in directly inoculated and laterally exposed turkey poults during Histomonas meleagridis challenge",
@@ -760,6 +773,7 @@ window.SITE_DATA = {
       ]
     }
   ],
+
   "skills": [
     {
       "group": "Bioinformatics and statistics",
@@ -798,7 +812,8 @@ window.SITE_DATA = {
       ]
     }
   ],
-  "Awards & Professional Activities": [
+
+  "honors": [
     {
       "title": "Travel Support",
       "year": "2026",
@@ -836,6 +851,7 @@ window.SITE_DATA = {
       "details": "Scholarship to study B.V.Sc. & A.H. at Agriculture and Forestry University."
     }
   ],
+
   "professionalActivities": [
     {
       "title": "Peer Review",
@@ -862,6 +878,7 @@ window.SITE_DATA = {
       "details": "Climates Nepal (2015–2016)."
     }
   ],
+
   "mentoring": [
     {
       "title": "Undergraduate student mentoring",
@@ -872,12 +889,14 @@ window.SITE_DATA = {
       "details": "Mentored an undergraduate student and a high school student through the Rising Scholar and Emerging Scholar programs at the University of Georgia (June–July 2024)."
     }
   ],
+
   "affiliations": [
     "Poultry Science Association",
     "American Association of Avian Pathologists",
     "World Poultry Science Association",
     "Poultry Science Graduate Club, University of Georgia"
   ],
+
   "media": [
     {
       "title": "UGA CAES personnel profile",
@@ -930,5 +949,6 @@ window.SITE_DATA = {
       "summary": "Add manuscript-safe figures, graphical abstracts, or infographics here when ready."
     }
   ],
+
   "footerNote": "© 2026 Abhisek Niraula. Editable academic portfolio website."
 };
