@@ -12,10 +12,9 @@ window.SITE_DATA = {
     "location": "Athens, Georgia, USA",
     "email": "abhisek.niraula@uga.edu",
     "secondaryEmail": "nabhisek02@gmail.com",
-    "phone": "706-714-2405",
     "address": "Athens, GA, USA",
     "tagline": "Poultry diseases, immunology, gut health, parasitology, and microbiome bioinformatics",
-    "summary": "I am a PhD student and Graduate Research Assistant in Poultry Science at the University of Georgia. My research focuses on poultry enteric diseases, host–pathogen interactions, immunology, intestinal health, organoid models, and microbiome bioinformatics, with emphasis on coccidiosis, necrotic enteritis, and histomoniasis.",
+    "summary": "I am a PhD student and Graduate Research Assistant in the Department of Poultry Science at the University of Georgia. My research focuses on poultry enteric diseases, host–pathogen interactions, immunology, intestinal health, organoid models, and microbiome bioinformatics, with emphasis on histomoniasis, coccidiosis, and necrotic enteritis.",
     "heroImage": "assets/profile/profile.jpg",
     "heroImageAlt": "Portrait of Abhisek Niraula",
     "cvFile": "assets/cv/Abhisek_Niraula_CV.pdf"
