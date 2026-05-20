@@ -82,6 +82,7 @@ window.SITE_DATA = {
       "institution": "University of Georgia",
       "location": "Athens, GA, USA",
       "dates": "Jan. 2025 – Present",
+      "Advisor": "Dr. Rami A. Dalloul",
       "details": "Current doctoral training focuses on poultry immunology, gut health, host–pathogen interactions, histomoniasis, organoid models, and microbiome bioinformatics."
     },
     {
@@ -89,6 +90,7 @@ window.SITE_DATA = {
       "institution": "University of Georgia",
       "location": "Athens, GA, USA",
       "dates": "Aug. 2022 – Dec. 2024",
+      "Advisor": "Dr. Rami A. Dalloul",
       "details": "Thesis: Differential response of divergent genetic lines of chickens to mixed Eimeria infection."
     },
     {
