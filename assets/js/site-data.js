@@ -889,5 +889,5 @@ window.SITE_DATA = {
     }
   ],
 
-  "footerNote": "© 2026 Abhisek Niraula. Editable academic portfolio website."
+  "footerNote": "© 2026 Abhisek Niraula. Website content licensed under CC BY-NC-ND 4.0."
 };
