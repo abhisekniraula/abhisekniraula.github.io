@@ -17,7 +17,7 @@ window.SITE_DATA = {
     "tagline": "Poultry diseases, immunology, gut health, parasitology, and microbiome bioinformatics",
     "summary": "I am a PhD student and Graduate Research Assistant in the Department of Poultry Science at the University of Georgia. My research focuses on poultry enteric diseases, host–pathogen interactions, immunology, intestinal health, organoid models, and microbiome bioinformatics, with emphasis on histomoniasis, coccidiosis, and necrotic enteritis.",
     "heroImage": "assets/profile/Profile.png",
-    "heroImageAlt": "Portrait of Abhisek Niraula",
+    "heroImageAlt": "Academic portfolio image representing poultry immunology, gut health, and microbiome research",
     "cvFile": "assets/cv/Abhisek_Niraula_CV.pdf"
   },
 
