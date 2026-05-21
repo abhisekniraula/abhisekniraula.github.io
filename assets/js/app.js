@@ -451,7 +451,28 @@ function renderPresentations() {
   observeReveals();
   italicizeScientificNames($("#main") || document.body);
 }
+  function coauthoredPresentationCard(p) {
+  return `<article class="card reveal rounded-3xl p-5">
+    <div class="mb-3 flex flex-wrap gap-2">
+      <span class="badge">${escapeHTML(p.year)}</span>
+      <span class="badge">${escapeHTML(p.type)}</span>
+      <span class="badge">${escapeHTML(p.status)}</span>
+      <span class="badge">${escapeHTML(p.role)}</span>
+    </div>
 
+    <h3 class="font-serif text-lg font-bold leading-snug">${escapeHTML(p.title)}</h3>
+
+    <p class="mt-2 text-sm leading-6 text-muted">${escapeHTML(p.authors || "")}</p>
+
+    <p class="mt-3 text-sm leading-6 text-muted">
+      ${escapeHTML(p.event)} • ${escapeHTML(p.location)} • ${escapeHTML(p.date)}
+    </p>
+
+    <div class="mt-4 flex flex-wrap gap-2">
+      ${(p.tags || []).map(makeTag).join("")}
+    </div>
+  </article>`;
+}
   function openPresentationModal(index, list) {
     const p = list[index];
     if (!p) return;
