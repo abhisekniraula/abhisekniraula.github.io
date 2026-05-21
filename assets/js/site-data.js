@@ -140,7 +140,7 @@ window.SITE_DATA = {
     {
       "title": "Gastro-intestinal parasite burden in Golden Jackal population and its implication in public health",
       "agency": "Zebra Foundation for Veterinary Zoological Education",
-      "years": "2020",
+      "years": "Sep. 2020 - Dec. 2020",
       "investigators": "Niraula, A.",
       "role": "Principal Investigator",
       "theme": "Parasitology • Public health"
