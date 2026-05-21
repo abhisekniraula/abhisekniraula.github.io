@@ -55,19 +55,19 @@
     return `<div class="card rounded-3xl p-8 text-center text-sm text-muted">${escapeHTML(message)}</div>`;
   }
 
-  function imageFigure(item, cls = "aspect-[4/3]", label = "Add image") {
-    return `<figure class="image-box relative ${cls} bg-slate-100 dark:bg-slate-900">
-      <img src="${escapeHTML(item.image || "")}" alt="${escapeHTML(item.imageAlt || item.title || "Image")}" loading="lazy" class="h-full w-full object-cover" onerror="this.closest('.image-box').classList.add('image-missing'); this.remove();" />
-      <div class="image-placeholder absolute inset-0 items-center justify-center p-6 text-center text-muted">
-        <div>
-          <svg class="mx-auto h-10 w-10 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909M3.75 19.5h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Z" />
-          </svg>
-          <p class="mt-3 text-xs">${label}:<br><code>${escapeHTML(item.image || "assets/.../image.jpg")}</code></p>
-        </div>
+  function imageFigure(item, cls = "aspect-[4/3]", label = "Image") {
+  return `<figure class="image-box relative ${cls} bg-slate-100 dark:bg-slate-900">
+    <img src="${escapeHTML(item.image || "")}" alt="${escapeHTML(item.imageAlt || item.title || "Image")}" loading="lazy" class="h-full w-full object-cover" onerror="this.closest('.image-box').classList.add('image-missing'); this.remove();" />
+    <div class="image-placeholder absolute inset-0 items-center justify-center p-6 text-center text-muted">
+      <div>
+        <svg class="mx-auto h-10 w-10 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909M3.75 19.5h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Z" />
+        </svg>
+        <p class="mt-3 text-xs">${escapeHTML(label)} coming soon</p>
       </div>
-    </figure>`;
-  }
+    </div>
+  </figure>`;
+}
 
   function renderAll() {
     renderProfile();
@@ -389,18 +389,37 @@
     renderPresentations();
   }
 
-  function renderPresentations() {
-    const root = $("#presentation-grid");
-    if (!root) return;
+  function isPresentedByMe(p) {
+  const role = String(p.role || "").toLowerCase();
+  return p.presentedByMe === true || role.includes("presenting author") || role.includes("presenter");
+}
 
-    const shown = (DATA.presentations || []).filter((p) =>
+function sortPresentationItems(a, b) {
+  const yearDiff = Number(b.year || 0) - Number(a.year || 0);
+  if (yearDiff !== 0) return yearDiff;
+  return String(b.date || "").localeCompare(String(a.date || ""));
+}
+
+function renderPresentations() {
+  const presentedRoot = $("#presented-presentation-grid");
+  const coauthoredRoot = $("#coauthored-presentation-list");
+
+  if (!presentedRoot && !coauthoredRoot) return;
+
+  const shown = (DATA.presentations || [])
+    .filter((p) =>
       (state.presentationType === "All" || p.type === state.presentationType) &&
       (state.presentationYear === "All" || p.year === state.presentationYear)
-    );
+    )
+    .sort(sortPresentationItems);
 
-    root.innerHTML = shown.map((p, i) =>
-      `<article class="presentation-card card reveal overflow-hidden rounded-3xl transition" tabindex="0" role="button" data-presentation-index="${i}" aria-label="Open presentation details for ${escapeHTML(p.title)}">
-        ${imageFigure(p, "aspect-[16/10]", "Add presentation image")}
+  const presentedByMe = shown.filter(isPresentedByMe);
+  const coauthored = shown.filter((p) => !isPresentedByMe(p));
+
+  if (presentedRoot) {
+    presentedRoot.innerHTML = presentedByMe.map((p, i) =>
+      `<article class="presentation-card card reveal overflow-hidden rounded-3xl transition" tabindex="0" role="button" data-presentation-index="${i}" data-presentation-section="presented" aria-label="Open presentation details for ${escapeHTML(p.title)}">
+        ${imageFigure(p, "aspect-[16/10]", "Presentation image")}
         <div class="p-5">
           <div class="mb-3 flex flex-wrap gap-2">
             <span class="badge">${escapeHTML(p.year)}</span>
@@ -412,21 +431,26 @@
           <p class="mt-1 text-xs text-muted">${escapeHTML(p.date)} • ${escapeHTML(p.role)}</p>
         </div>
       </article>`
-    ).join("") || emptyState("No presentations match these filters.");
+    ).join("") || emptyState("No presented-by-me presentations match these filters.");
 
-    $$(".presentation-card", root).forEach((card) => {
-      card.addEventListener("click", () => openPresentationModal(Number(card.dataset.presentationIndex), shown));
+    $$(".presentation-card", presentedRoot).forEach((card) => {
+      card.addEventListener("click", () => openPresentationModal(Number(card.dataset.presentationIndex), presentedByMe));
       card.addEventListener("keydown", (e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
-          openPresentationModal(Number(card.dataset.presentationIndex), shown);
+          openPresentationModal(Number(card.dataset.presentationIndex), presentedByMe);
         }
       });
     });
-
-    observeReveals();
-    italicizeScientificNames(root);
   }
+
+  if (coauthoredRoot) {
+    coauthoredRoot.innerHTML = coauthored.map(coauthoredPresentationCard).join("") || emptyState("No co-authored abstracts match these filters.");
+  }
+
+  observeReveals();
+  italicizeScientificNames($("#main") || document.body);
+}
 
   function openPresentationModal(index, list) {
     const p = list[index];
