@@ -150,36 +150,37 @@ window.SITE_DATA = {
   "projects": [
     {
       "title": "Cecal organoid model for Histomonas meleagridis research",
-      "status": "Funded / active",
+      "status": "Funded / Active",
       "theme": "Histomoniasis",
       "year": "2026–2029",
       "image": "assets/project-images/organoid-histomonas.jpg",
       "imageAlt": "Cecal organoid and Histomonas meleagridis co-culture project image",
-      "summary": "Developing and applying cecal organoids as a laboratory model to evaluate alternative chemotherapeutic compounds and host epithelial responses during Histomonas meleagridis infection.",
+      "summary": "Developing and applying cecal organoids as a laboratory model to investigate host epithelial responses and evaluate alternative chemotherapeutic compounds during Histomonas meleagridis infection.",
       "tags": [
         "Cecal organoids",
         "Histomonas meleagridis",
         "Turkey",
-        "Alternative control"
+        "Control and Prevention Strategies"
       ]
     },
     {
       "title": "Turkey histomoniasis lateral-transmission models",
       "status": "Active manuscript work",
       "theme": "Histomoniasis",
-      "year": "2023–2026",
+      "year": "2023–Present",
       "image": "assets/project-images/histomoniasis-transmission.jpg",
       "imageAlt": "Turkey histomoniasis lateral transmission model image",
-      "summary": "Evaluating performance, pathology, microbiome responses, and candidate phytogenic supplementation strategies in turkey poults exposed to Histomonas meleagridis through lateral-transmission models.",
+      "summary": "Evaluating performance, pathology, microbiome responses, and candidate alternative strategies in turkey poults exposed to Histomonas meleagridis through lateral-transmission models.",
       "tags": [
         "Histomoniasis",
         "Lateral transmission",
+         "Microbiome",
         "Phytogenic supplementation",
         "Turkey poults"
       ]
     },
     {
-      "title": "Necrotic enteritis microbiome and gut-health modulation",
+      "title": "Necrotic enteritis: host immune response, pathology, and microbiome",
       "status": "In preparation",
       "theme": "Microbiome",
       "year": "2024–2026",
@@ -194,13 +195,13 @@ window.SITE_DATA = {
       ]
     },
     {
-      "title": "Host genetics associated with resistance to coccidiosis and necrotic enteritis",
-      "status": "Published / continuing",
+      "title": "Coccidiosis: Chicken performance, pathology, Host genetics and coccidial resistance",
+      "status": "Published",
       "theme": "Host genetics",
-      "year": "2022–2026",
+      "year": "2022–2025",
       "image": "assets/project-images/host-genetics.jpg",
       "imageAlt": "Chicken host genetics and disease resistance project image",
-      "summary": "Investigating how MHC-B and alloantigen systems A, D, E, and I contribute to resistance traits during coccidiosis and related enteric disease challenges.",
+      "summary": "Investigating how MHC-B and alloantigen systems A, D, E, and I contribute to resistance traits during coccidiosis challenge in chickens.",
       "tags": [
         "MHC-B",
         "Alloantigen systems",
@@ -209,25 +210,10 @@ window.SITE_DATA = {
       ]
     },
     {
-      "title": "Gut permeability and immune markers during enteric challenge",
-      "status": "Published / continuing",
-      "theme": "Gut health",
-      "year": "2024–2026",
-      "image": "assets/project-images/gut-integrity.jpg",
-      "imageAlt": "Gut integrity and intestinal permeability project image",
-      "summary": "Assessing intestinal permeability, gut integrity markers, cytokines, and immune responses in poultry challenged with Eimeria maxima, Clostridium perfringens, or both.",
-      "tags": [
-        "Iohexol",
-        "Gut integrity",
-        "qPCR",
-        "ELISA"
-      ]
-    },
-    {
       "title": "Wildlife parasitology and zoonotic disease awareness",
-      "status": "Completed / continuing interest",
+      "status": "Completed",
       "theme": "Parasitology",
-      "year": "Sept. 2020 – Dec. 2020",
+      "year": "Sept. 2020–Dec. 2020",
       "image": "assets/project-images/wildlife-parasitology.jpg",
       "imageAlt": "Wildlife parasitology and zoonotic disease project image",
       "summary": "Building on veterinary training and early research on zoonotic disease knowledge and gastrointestinal parasite burden to connect poultry, wildlife, and public health questions.",
