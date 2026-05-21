@@ -232,7 +232,7 @@
     if (!grid) return;
 
     grid.innerHTML = shown.map((project) =>
-      `<article class="card reveal flex flex-col overflow-hidden rounded-3xl">
+      `<article class="card reveal flex min-h-[360px] w-full max-w-[420px] flex-col overflow-hidden rounded-3xl md:w-[calc(50%-0.75rem)] xl:w-[calc(33.333%-1rem)]">
         ${imageFigure(project, "aspect-[4/3]", "Add project image")}
         <div class="flex flex-1 flex-col p-5">
           <div class="mb-3 flex flex-wrap gap-2">
