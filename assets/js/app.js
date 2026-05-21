@@ -56,16 +56,12 @@
   }
 
   function imageFigure(item, cls = "aspect-[4/3]", label = "Image") {
+  if (!item.image) {
+    return "";
+  }
+
   return `<figure class="image-box relative ${cls} bg-slate-100 dark:bg-slate-900">
-    <img src="${escapeHTML(item.image || "")}" alt="${escapeHTML(item.imageAlt || item.title || "Image")}" loading="lazy" class="h-full w-full object-cover" onerror="this.closest('.image-box').classList.add('image-missing'); this.remove();" />
-    <div class="image-placeholder absolute inset-0 items-center justify-center p-6 text-center text-muted">
-      <div>
-        <svg class="mx-auto h-10 w-10 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909M3.75 19.5h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Z" />
-        </svg>
-        <p class="mt-3 text-xs">${escapeHTML(label)} coming soon</p>
-      </div>
-    </div>
+    <img src="${escapeHTML(item.image)}" alt="${escapeHTML(item.imageAlt || item.title || "Image")}" loading="lazy" class="h-full w-full object-cover" onerror="this.closest('.image-box').style.display='none'; this.remove();" />
   </figure>`;
 }
 
