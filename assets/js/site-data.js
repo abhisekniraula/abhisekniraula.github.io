@@ -86,7 +86,7 @@ window.SITE_DATA = {
       "degree": "PhD in Poultry Science (Immunology and Health)",
       "institution": "University of Georgia",
       "location": "Athens, GA, USA",
-      "dates": "Jan. 2025 – Present",
+      "dates": "Jan. 2025–Present",
       "advisor": "Dr. Rami A. Dalloul",
        "advisorUrl": "https://poultry.caes.uga.edu/people/faculty/rami-dalloul.html",
       "details": "Current doctoral training focuses on poultry immunology, gut health, host–pathogen interactions, histomoniasis, organoid models, and microbiome bioinformatics."
