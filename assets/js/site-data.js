@@ -576,7 +576,7 @@ window.SITE_DATA = {
     "status": "Presented",
     "role": "Presenter; co-author",
     "presentedByMe": true,
-    "image": "assets/presentations/2025-psa-1.jpg",
+    "image": "assets/presentations/2025-psa-1.JPG",
     "imageAlt": "Abhisek Niraula presenting the host genetics symposium talk at the 2025 Poultry Science Association Annual Meeting",
     "abstract": "Host genetics associated with coccidiosis and necrotic enteritis",
     "tags": ["Host genetics", "Coccidiosis", "Necrotic enteritis"]
@@ -656,7 +656,7 @@ window.SITE_DATA = {
     "status": "Presented",
     "role": "Presenting author",
     "presentedByMe": true,
-    "image": "assets/presentations/2025-ipsf.jpeg",
+    "image": "assets/presentations/2025-ipsf.JPEG",
     "imageAlt": "Abhisek Niraula presenting at the 2025 International Poultry Scientific Forum",
     "abstract": "Chicken alloantigen systems MHC-B, D, E, and I haplotypes are associated with resistance to coccidiosis",
     "tags": ["MHC-B", "Alloantigen systems", "Coccidiosis"]
@@ -704,7 +704,7 @@ window.SITE_DATA = {
     "status": "Presented",
     "role": "Presenting author",
     "presentedByMe": true,
-    "image": "assets/presentations/2023-psa.jpg",
+    "image": "assets/presentations/2023-psa.JPG",
     "imageAlt": "Abhisek Niraula presenting at the 2023 Poultry Science Association Annual Meeting",
     "abstract": "Protective effects of Alterna® HTS in turkey poults raised in a floor pen lateral transmission model of Histomonas meleagridis",
     "tags": ["Alterna HTS", "Histomoniasis", "Turkey poults"]
