@@ -848,6 +848,16 @@ window.SITE_DATA = {
      "summary": "Journal club presentation discussing multi-locus typing of Histomonas meleagridis isolates, genetic diversity, molecular markers, and the evidence for two genotypes."
    },
      {
+  "title": "Paper: Multi-Locus Typing of Histomonas meleagridis Isolates Demonstrates the Existence of Two Different Genotypes",
+  "category": "Journal Club",
+  "year": "2014",
+  "source": "PLOS ONE",
+  "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0092438",
+  "image": "",
+  "imageAlt": "",
+  "summary": "Open-access article by Bilic et al. describing multi-locus typing of Histomonas meleagridis isolates using 18S rRNA, α-actinin1, and rpb1 markers, with phylogenetic evidence supporting two genotypes."
+},
+     {
       "title": "UGA CAES personnel profile",
       "category": "Profile",
       "year": "2026",
