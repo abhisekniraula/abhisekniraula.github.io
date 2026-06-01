@@ -837,7 +837,17 @@ window.SITE_DATA = {
   ],
 
   "media": [
-    {
+   {
+     "title": "Journal Club Presentation: Multi-locus typing of Histomonas meleagridis",
+     "category": "Journal Club",
+     "year": "2026",
+     "source": "Course journal club presentation",
+     "url": "assets/media/presentations/histomonas-multilocus-typing-journal-club.pdf",
+     "image": "",
+     "imageAlt": "",
+     "summary": "Journal club presentation discussing multi-locus typing of Histomonas meleagridis isolates, genetic diversity, molecular markers, and the evidence for two genotypes."
+   },
+     {
       "title": "UGA CAES personnel profile",
       "category": "Profile",
       "year": "2026",
