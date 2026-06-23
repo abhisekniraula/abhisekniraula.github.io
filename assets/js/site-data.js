@@ -228,6 +228,26 @@ window.SITE_DATA = {
 
   "publications": {
     "published": [
+       {
+  "title": "Phytogenic Blends Elicit Positive Effects on Broiler Performance, Tight Junction Proteins, and Immune Responses During a Necrotic Enteritis Challenge",
+  "authors": "Blue, C. E. C., Dong, B., Niraula, A., Wagner, A. L., Médina, B., Girard, I., & Dalloul, R. A.",
+  "journal": "Agriculture",
+  "year": "2026",
+  "volume": "16(12)",
+  "pages": "1334",
+  "doi": "10.3390/agriculture16121334",
+  "url": "https://www.mdpi.com/2077-0472/16/12/1334",
+  "type": "Research article",
+  "role": "Co-author",
+  "status": "Published",
+  "keywords": [
+    "Phytogenic blends",
+    "Broiler performance",
+    "Tight junction proteins",
+    "Immune responses",
+    "Necrotic enteritis"
+  ]
+},
       {
         "title": "A global review of highly pathogenic avian influenza (HPAI) and control strategies in Nepal",
         "authors": "Subedi, D., Thakur, S., Paudel, M., Gurung, P., Kafle, S., Bhattarai, S., Niraula, A., Marasini, H., Kandel, M., Karki, S., Tiwari, A., & Jyoti, S.",
