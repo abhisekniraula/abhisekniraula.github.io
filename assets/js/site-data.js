@@ -773,6 +773,12 @@ window.SITE_DATA = {
   ],
 
   "honors": [
+     {
+  "title": "Travel Award",
+  "year": "2026",
+  "organization": "Poultry Science Association",
+  "details": "Travel scholarship to present research findings at the 2026 Poultry Science Association Annual Meeting, Toronto, Canada"
+},
     {
       "title": "Travel Support",
       "year": "2026",
