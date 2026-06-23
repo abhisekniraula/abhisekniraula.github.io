@@ -52,7 +52,7 @@ window.SITE_DATA = {
   "stats": [
     {
       "label": "Published peer-reviewed papers",
-      "value": "8"
+      "value": "9"
     },
     {
       "label": "Submitted manuscript",
