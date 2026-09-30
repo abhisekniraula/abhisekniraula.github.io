@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abhisekniraula.github.io/sitemap.xml

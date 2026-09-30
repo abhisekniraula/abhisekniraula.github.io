@@ -16,8 +16,9 @@ window.SITE_DATA = {
     "address": "Athens, GA, USA",
     "tagline": "Poultry diseases, immunology, gut health, parasitology, and microbiome bioinformatics",
     "summary": "I am a PhD student and Graduate Research Assistant in the Department of Poultry Science at the University of Georgia. My research focuses on poultry enteric diseases, host–pathogen interactions, immunology, intestinal health, organoid models, and microbiome bioinformatics, with emphasis on histomoniasis, coccidiosis, and necrotic enteritis.",
-    "heroImage": "assets/profile/Profile.png",
-    "heroImageAlt": "Academic portfolio image representing poultry immunology, gut health, and microbiome research",
+    "heroImage": "assets/img/histomonas-hero.webp",
+    "heroImageAlt": "Artistic rendering of a Histomonas meleagridis cell with its single flagellum",
+    "rotatingFocus": ["histomoniasis", "cecal organoids", "coccidiosis", "necrotic enteritis", "the poultry microbiome"],
     "cvFile": "assets/cv/Abhisek_Niraula_CV.pdf"
   },
 
@@ -79,6 +80,36 @@ window.SITE_DATA = {
     "Necrotic enteritis",
     "Host genetics",
     "Organoid models"
+  ],
+
+  "pillars": [
+    {
+      "title": "Histomoniasis",
+      "host": "Turkeys",
+      "label": "H. meleagridis",
+      "color": "teal",
+      "summary": "Blackhead disease: lateral-transmission models, cecal microbiome responses and cecal organoid co-culture with Histomonas meleagridis to test alternative controls.",
+      "match": ["histomon", "blackhead"],
+      "link": "research.html#cecal-organoid-model-for-histomonas-meleagridis-research"
+    },
+    {
+      "title": "Coccidiosis",
+      "host": "Chickens",
+      "label": "Eimeria spp.",
+      "color": "gold",
+      "summary": "Eimeria infection: how MHC-B and alloantigen systems shape resistance, and how day-of-hatch vaccination affects gut integrity and immunity.",
+      "match": ["coccid", "eimeria"],
+      "link": "research.html#coccidiosis-chicken-performance-pathology-host-genetics-and"
+    },
+    {
+      "title": "Necrotic enteritis",
+      "host": "Broilers",
+      "label": "C. perfringens",
+      "color": "rose",
+      "summary": "Clostridium perfringens challenge: immune responses, intestinal permeability and ileal and cecal microbiota under dietary alternatives.",
+      "match": ["necrotic", "perfringens"],
+      "link": "research.html#necrotic-enteritis-host-immune-response-pathology-and-microb"
+    }
   ],
 
   "education": [
@@ -153,7 +184,7 @@ window.SITE_DATA = {
       "status": "Funded / Active",
       "theme": "Histomoniasis",
       "year": "2026–2029",
-      "image": "assets/project-images/organoid-histomonas.jpg",
+      "image": "",
       "imageAlt": "Cecal organoid and Histomonas meleagridis co-culture project image",
       "summary": "Developing and applying cecal organoids as a laboratory model to investigate host epithelial responses and evaluate alternative chemotherapeutic compounds during Histomonas meleagridis infection.",
       "tags": [
@@ -168,7 +199,7 @@ window.SITE_DATA = {
       "status": "Active manuscript work",
       "theme": "Histomoniasis",
       "year": "2023–Present",
-      "image": "assets/project-images/histomoniasis-transmission.jpg",
+      "image": "",
       "imageAlt": "Turkey histomoniasis lateral transmission model image",
       "summary": "Evaluating performance, pathology, microbiome responses, and candidate alternative strategies in turkey poults exposed to Histomonas meleagridis through lateral-transmission models.",
       "tags": [
@@ -184,7 +215,7 @@ window.SITE_DATA = {
       "status": "In preparation",
       "theme": "Microbiome",
       "year": "2024–2026",
-      "image": "assets/project-images/ne-microbiome.jpg",
+      "image": "",
       "imageAlt": "Necrotic enteritis microbiome project image",
       "summary": "Analyzing ileal and cecal microbiota during necrotic enteritis challenge to evaluate how dietary alternatives and microbial shifts support gut health in broiler chickens.",
       "tags": [
@@ -199,7 +230,7 @@ window.SITE_DATA = {
       "status": "Published",
       "theme": "Host genetics",
       "year": "2022–2025",
-      "image": "assets/project-images/host-genetics.jpg",
+      "image": "",
       "imageAlt": "Chicken host genetics and disease resistance project image",
       "summary": "Investigating how MHC-B and alloantigen systems A, D, E, and I contribute to resistance traits during coccidiosis challenge in chickens.",
       "tags": [
@@ -214,7 +245,7 @@ window.SITE_DATA = {
       "status": "Completed",
       "theme": "Parasitology",
       "year": "Sept. 2020–Dec. 2020",
-      "image": "assets/project-images/wildlife-parasitology.jpg",
+      "image": "",
       "imageAlt": "Wildlife parasitology and zoonotic disease project image",
       "summary": "Building on veterinary training and early research on zoonotic disease knowledge and gastrointestinal parasite burden to connect poultry, wildlife, and public health questions.",
       "tags": [
@@ -863,7 +894,7 @@ window.SITE_DATA = {
   ],
 
   "media": [
-   {
+    {
      "title": "Journal Club Presentation: Multi-locus typing of Histomonas meleagridis",
      "category": "Journal Club",
      "year": "2026",
@@ -873,7 +904,7 @@ window.SITE_DATA = {
      "imageAlt": "",
      "summary": "Journal club presentation discussing multi-locus typing of Histomonas meleagridis isolates, genetic diversity, molecular markers, and the evidence for two genotypes."
    },
-     {
+    {
   "title": "Paper: Multi-Locus Typing of Histomonas meleagridis Isolates Demonstrates the Existence of Two Different Genotypes",
   "category": "Journal Club",
   "year": "2014",
@@ -883,15 +914,15 @@ window.SITE_DATA = {
   "imageAlt": "",
   "summary": "Open-access article by Bilic et al. describing multi-locus typing of Histomonas meleagridis isolates using 18S rRNA, α-actinin1, and rpb1 markers, with phylogenetic evidence supporting two genotypes."
 },
-     {
+    {
       "title": "UGA CAES personnel profile",
       "category": "Profile",
       "year": "2026",
       "source": "University of Georgia CAES",
       "url": "https://www.caes.uga.edu/about/personnel/person.html/23666/abhisek-niraula.html",
-      "image": "assets/media/news/uga-caes-profile.jpg",
-      "imageAlt": "Screenshot or portrait for UGA CAES personnel profile",
-      "summary": "Professional university profile page. Replace the image placeholder with a screenshot or professional headshot if you want a media-card preview."
+      "image": "",
+      "imageAlt": "",
+      "summary": "Official personnel profile at the University of Georgia College of Agricultural and Environmental Sciences."
     },
     {
       "title": "Avian Immunobiology Lab people page",
@@ -899,19 +930,9 @@ window.SITE_DATA = {
       "year": "2026",
       "source": "Avian Immunobiology Laboratory",
       "url": "https://dalloullab.uga.edu/people/",
-      "image": "assets/media/news/avian-immunobiology-lab.jpg",
-      "imageAlt": "Screenshot or lab photo for Avian Immunobiology Lab people page",
+      "image": "",
+      "imageAlt": "",
       "summary": "Lab affiliation profile listing graduate students in the Avian Immunobiology Laboratory."
-    },
-    {
-      "title": "Conference and presentation photo gallery",
-      "category": "Gallery",
-      "year": "2026",
-      "source": "Personal media",
-      "url": "",
-      "image": "assets/media/gallery/conference-gallery-cover.jpg",
-      "imageAlt": "Conference presentation gallery cover image",
-      "summary": "Use this card as a gallery cover for presentation photos. Add images to assets/media/gallery/ and update this entry in site-data.js."
     },
     {
       "title": "Poster and oral presentation snapshots",
@@ -919,19 +940,9 @@ window.SITE_DATA = {
       "year": "2025–2026",
       "source": "Personal media",
       "url": "presentations.html",
-      "image": "assets/media/presentations/presentation-snapshots.jpg",
+      "image": "",
       "imageAlt": "Presentation snapshots gallery image",
-      "summary": "A media landing card linking to the interactive presentations page, where each presentation can show a poster, slide, or conference photo."
-    },
-    {
-      "title": "Research infographics and figures",
-      "category": "Figures",
-      "year": "Ongoing",
-      "source": "Personal media",
-      "url": "",
-      "image": "assets/media/gallery/research-infographics.jpg",
-      "imageAlt": "Research infographic gallery image",
-      "summary": "Add manuscript-safe figures, graphical abstracts, or infographics here when ready."
+      "summary": "Photos and details from poster, oral and symposium presentations at PSA, IPSF and AAAP meetings."
     }
   ],
 
