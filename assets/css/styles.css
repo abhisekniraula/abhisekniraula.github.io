@@ -183,7 +183,7 @@ em, i { font-style: italic; }
 .brand-mark { width: 34px; height: 34px; flex: none; display: grid; place-items: center; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--line); }
 .brand-mark svg { width: 24px; height: 24px; }
 .brand-name { display: block; font-family: var(--font-display); font-weight: 600; font-size: 17px; letter-spacing: -0.02em; line-height: 1.1; }
-.brand-sub { display: block; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); line-height: 1.4; white-space: nowrap; }
+.brand-sub { display: block; font-family: var(--font-mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); line-height: 1.35; white-space: nowrap; }
 .nav { display: flex; align-items: center; gap: 2px; }
 .nav a {
   position: relative; padding: 8px 11px; border-radius: 10px; font-size: 14px; font-weight: 500; color: var(--muted);
@@ -211,7 +211,7 @@ kbd { font-family: var(--font-mono); font-size: 11px; padding: 2px 6px; border-r
 @media (max-width: 560px) {
   .search-trigger span, .search-trigger kbd { display: none; }
   .search-trigger { width: 40px; padding: 0; justify-content: center; }
-  .brand-sub { display: none; }
+  .brand-sub { font-size: 9px; letter-spacing: .06em; }
 }
 
 /* scroll progress + swimming Histomonas */

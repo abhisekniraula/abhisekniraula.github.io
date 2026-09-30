@@ -17,7 +17,7 @@ window.SITE_DATA = {
     "tagline": "Poultry diseases, immunology, gut health, parasitology, and microbiome bioinformatics",
     "summary": "I am a PhD student and Graduate Research Assistant in the Department of Poultry Science at the University of Georgia. My research focuses on poultry enteric diseases, host–pathogen interactions, immunology, intestinal health, organoid models, and microbiome bioinformatics, with emphasis on histomoniasis, coccidiosis, and necrotic enteritis.",
     "heroImage": "assets/img/histomonas-hero.webp",
-    "heroImageAlt": "Artistic rendering of a Histomonas meleagridis cell with its single flagellum",
+    "heroImageAlt": "AI-generated illustration (Google Gemini) of a Histomonas meleagridis cell with its single flagellum",
     "rotatingFocus": ["histomoniasis", "cecal organoids", "coccidiosis", "necrotic enteritis", "the poultry microbiome"],
     "cvFile": "assets/cv/Abhisek_Niraula_CV.pdf"
   },

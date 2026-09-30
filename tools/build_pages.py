@@ -131,7 +131,7 @@ def header(page):
     <div class="container header-inner">
       <a href="index.html" class="brand" aria-label="{NAME} — home">
         <span class="brand-mark">{HM}</span>
-        <span><span class="brand-name">{NAME}</span><span class="brand-sub">Avian Immunobiology · UGA</span></span>
+        <span><span class="brand-name">{NAME}</span><span class="brand-sub">Avian Immunobiology Lab</span><span class="brand-sub">University of Georgia</span></span>
       </a>
       <nav class="nav" aria-label="Primary">
 {links}
@@ -228,7 +228,7 @@ BODIES["home"] = """
             <div class="hud hud-tl">Obj <b>100×</b> · Oil<br />Ch <b>DAPI</b> / FITC / TRITC</div>
             <div class="hud hud-br">Stage <b id="hud-xy">X 0000 · Y 0000</b><br />Focus <b id="hud-z" class="u">+0.00 µm</b></div>
             <div class="hud hud-bl"><span class="scalebar"></span><span class="u">10 µm</span></div>
-            <div class="caption-fig" id="hero-caption"><i>Histomonas meleagridis</i> · artistic rendering</div>
+            <div class="caption-fig" id="hero-caption"><i>Histomonas meleagridis</i> · AI-generated illustration (Google Gemini)</div>
           </div>
         </div>
       </div>
